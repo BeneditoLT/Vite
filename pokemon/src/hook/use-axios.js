@@ -7,6 +7,15 @@ export default function useAxios(configRequest) {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState('')
 
+    useEffect(() =>{
+        const fetcData = async () => {
+            try{
+                const res = await axiosInstance[method.toLowerCase()](url, {...othersConfig})
+                
+            }
+        }
+    })
 
-    
+
+
 }
