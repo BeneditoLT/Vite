@@ -8,14 +8,27 @@ export default function useAxios(configRequest) {
     const [error, setError] = useState('')
 
     useEffect(() =>{
-        const fetcData = async () => {
-            try{
-                const res = await axiosInstance[method.toLowerCase()](url, {...othersConfig})
+        const fetchData = async () => {
+            try { 
+                const res = await axiosInstance[method.toLowerCase()](url, {...othersConfig,
                 
+                
+                })
+
+                console.log(res.data)
+                setData(res.data)
+
+            } catch (err){
+                console.log(err.message)
+                setError(err.data)
+            
+            }finally{
+                setLoading(false)
             }
-        }
-    })
+        } 
+        fetchData()
+    },[])
 
-
+return [data, loading, error]
 
 }
