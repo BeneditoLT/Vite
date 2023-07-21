@@ -1,54 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Vite + React</title>
   </head>
   <body>
-    <div class="contact-us">
-      <h1>Fale conosco EletrokitsDev</h1>
-      <p>Deixe sua mensagem a baixo, ficaremos felises em receber o seu contato !!!</p>
-      
-    </div>
-
-    <form>
-      <div class="inputField">
-        
-        <label>Nome Completo</label>
-         <input  name="name" placeholder="Digite seu nome"/>
-         <p class="error error-hidden" >O nome é Obrigatorio </p>
-    
-        <div inputField>
-       
-        <label>Digite seu email</label>
-        <input  name="email" placeholder="Digite seu email"/>
-        <p class="error error-hidden" >O email é invalido</p>
-
-
-        <label>Digite seu CPF</label>
-        <input  name="cpf" placeholder="Digite seu CPF"/>
-        <p class="error error-hidden" >CPF Invalido</p>
-      </div>
-        
-        <hr>
-         <button>Submit</button>
-
-
-         
-
-      </div>
-
-
-
-     
-  
-    </form>
-    <div class="thanks error-hidden">
-      <h2>Obrogado pelo seu contato </h2>
-    </div>
-    <script src="./script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
