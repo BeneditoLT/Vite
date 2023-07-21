@@ -9,7 +9,8 @@ function App() {
     <div>
       <button onClick={() => setOpen(true)}>Abrir o Modal</button>
       <Modal isOpen={open} setModal={()=> setOpen(!open)}/>
-       
+
+      
     </div>
   )
 }
